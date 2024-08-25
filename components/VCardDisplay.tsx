@@ -78,8 +78,8 @@ export default function VCardDisplay({ contact }: VCardDisplayProps) {
         />
       </div>
       <p className="mt-4 text-sm text-gray-400">
-        Scan this QR code with your phone's camera, QR scanner, or Line app to
-        download the vCard
+        Scan this QR code with your phone&apos;s camera, QR scanner, or Line app
+        to download the vCard
       </p>
       <div className="mt-4 space-y-2">
         <button
