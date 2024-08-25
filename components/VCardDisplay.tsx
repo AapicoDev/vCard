@@ -19,7 +19,7 @@ export default function VCardDisplay({ contact }: VCardDisplayProps) {
   const [logo, setLogo] = useState<string | null>(null);
   const qrRef = useRef<HTMLDivElement>(null);
 
-  const vCardUrl = `/api/vcard?name=${encodeURIComponent(contact.name)}&phone=${encodeURIComponent(contact.phone)}&email=${encodeURIComponent(contact.email)}&company=${encodeURIComponent(contact.company)}&title=${encodeURIComponent(contact.title)}`;
+  const vCardUrl = `/api/vcard?name=${encodeURIComponent(contact.name)}&phone=${encodeURIComponent(contact.phone)}&email=${encodeURIComponent(contact.email)}&company=${encodeURIComponent(contact.company)}&title=${encodeURIComponent(contact.title)}&openExternalBrowser=1`;
 
   const handleDownload = () => {
     window.open(vCardUrl, "_blank");
